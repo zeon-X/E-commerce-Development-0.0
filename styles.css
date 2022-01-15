@@ -1,4 +1,4 @@
-@media only screen (max-width: 668px){
+@media only screen (max-width: 480px){
     .page-links{
         display : none;}
     .bar-icon{
@@ -7,6 +7,9 @@
         display : visible;}
     .nav{
       flex-direction : column;}
+    
+    main,footer{
+        display : none;}
 }
 
 
