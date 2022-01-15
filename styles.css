@@ -9,8 +9,6 @@
     .nav{
       flex-direction : column;}
     
-    main,footer{
-        display : none;}
     
     .section-one{
         flex-direction : column;
