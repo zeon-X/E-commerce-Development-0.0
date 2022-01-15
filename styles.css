@@ -1,3 +1,15 @@
+@media only screen (max-width: 668px){
+    .page-links{
+        display : none;}
+    .bar-icon{
+        display : visible;}
+    .cart-icon{
+        display : visible;}
+    .nav{
+      flex-direction : column;}
+}
+
+
 body{
     font-family: 'Poppins', sans-serif;
     display: flex;
@@ -17,6 +29,11 @@ body{
  header,main{
     width: 1150px;
  }
+
+.bar-icon{
+
+    display : none;
+}
  nav{
     width: 100%;
     display: flex;
