@@ -81,14 +81,21 @@ body{
      background-repeat:no-repeat ;
      background-position: center; 
      background-size: 475px 475px;
+
      display: flex;
      justify-content: center;
      align-items: center;
  }
- .photo-property img{
+ .the-photo{
     width: 440px;
     height: 414px;
+    transition: transform 3s ease-in-out;
  }
+ .the-photo:hover{
+     transform: rotatey(-180deg);
+     
+ }
+ 
  
 
 
@@ -123,7 +130,8 @@ body{
 
  .section-three{
      /* border: solid 1px black; */
-
+    display: flex;
+    flex-direction: column;
      margin:0 5%;
  }
  .section-three-title{
@@ -185,4 +193,51 @@ article h6{
     margin: 0 0 10px 0;
     color: #787885
 }
+   /*---------------------------------------
+     grid card end here 
+     see more start here \|/
+     ----------------------------------------*/
+
+
+.see-more{
+    padding: 50px 0px;
+    text-decoration: none;
+    color: #E02C6D;
+    font-size: 16px;
+    font-weight: 800;
+    text-align: right;
+}
+
+
+/*----------------------------------------------
+ Footer starts here 
+ -----------------------------------------------*/
+
+ footer{
+     width: 100%;
+     height: 250px;
+     background-color: #0A0826;
+     color: white;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+ }
+
+ footer h1{
+    margin: 0 0 10px 0;
+    font-size: 24px;
+    font-weight: 800;
+    
+ }
+ footer p{
+    margin: 0;
+     font-size: 14px;
+    font-weight: 800px;
+ }
+
+ .social-icon i{
+     font-size: 25px;
+     padding: 20px 15px;
+ }
  
