@@ -1,3 +1,7 @@
+
+/*--------------------------
+ common for all 
+----------------------------*/
 body{
     font-family: 'Poppins', sans-serif;
     display: flex;
@@ -17,12 +21,20 @@ body{
  header,main{
     width: 1150px;
  }
+ main{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
  nav{
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 60px;
+ }
+ #nav-bar{
+     display: none;
  }
  .nav-title{
     font-weight: 700;
@@ -209,6 +221,51 @@ article h6{
 }
 
 
+/*--------------------------------------
+ section 4 starts here 
+ --------------------------------------*/
+ .section-four{
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:50px 0 70px 0;
+    width: 90%;
+ }
+
+ .photo-property-s4 img{
+    width: 90%;
+ }
+ 
+ .section-title-details-s4 h1{
+    font-weight: 800;
+    font-size:30px;
+    margin: 0;
+ }
+ .section-title-details-s4 p{
+    margin: 0 0 30px 0 ;
+ }
+ .grid-s4{
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     grid-gap: 10px;
+ }
+ .for-flex{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     
+ }
+ .for-flex h1{
+     font-weight: 800;
+     font-size: 40px;
+     margin: 0;
+     color: #E02C6D;
+ }
+ .for-flex p{
+    font-weight: 400;
+    font-size: 25px;
+    margin: 0;
+}
 /*----------------------------------------------
  Footer starts here 
  -----------------------------------------------*/
@@ -240,4 +297,181 @@ article h6{
      font-size: 25px;
      padding: 20px 15px;
  }
+
+
+
+
+ /*--------------------------------------------------
+ -----------------------------------------------------
+  for mobile phone max width 688px 
+  ----------------------------------------------------
+  ---------------------------------------------------*/
+
+
+  @media only screen and (max-width :688px) {
+    
+    header,main{
+        width: 96%;
+        margin-left :2%;
+        margin-right: 2%;
+     }
+
+    footer{
+        width : 100%;
+    }
+
+     #nav-bar{
+         display: block;
+         font-size: 30px;
+     }
+
+     #cart-icon,.pages-links ul li a{
+        margin: 0;
+     }
+
+     .section-one{
+         flex-direction: column;
+         align-items: center;
+         height: 100%;
+     }
+     .section-title-details, .photo-property{
+         height: 100%;
+     }
+    .photo-property{
+            order : 1;
+        }
+     .section-title-details{
+         order :2;
+     }
+    
+     .grid-logo{
+         border: none;
+         grid-template-columns: repeat(4,1fr);
+         grid-gap: 3%;
+         padding: 0% 5%;
+     }
+
+     .grid-card{
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+
+
+
+    .section-four{
+        flex-direction: column;
+    }
+    .photo-property-s4 {
+        display: flex;
+        justify-content: center;
+    }
+    .section-title-details-s4{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .grid-s4{
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+    }
+    .for-flex{
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .for-flex h1{
+        font-size: 50px;
+    }
+
+
+    .nav-none{
+         display: none;
+     }
+  }
+
+
+
+  /*--------------------------------------------------
+ -----------------------------------------------------
+  for i-pad min width 688px max width 992px 
+  ----------------------------------------------------
+  ---------------------------------------------------*/
+  @media only screen and (min-width : 688px) and (max-width : 992px) {
+    header,main{
+        width: 96%;
+        margin-left :2%;
+        margin-right: 2%;
+     }
+
+    footer{
+        width : 100%;
+    }
+
+     #nav-bar{
+         display: block;
+         font-size: 30px;
+     }
+
+     #cart-icon,.pages-links ul li a{
+        margin: 0;
+     }
+
+     .section-one{
+         flex-direction: column;
+         align-items: center;
+         height: 100%;
+     }
+     .section-title-details, .photo-property{
+         height: 100%;
+     }
+    .photo-property{
+            order : 1;
+        }
+     .section-title-details{
+         order :2;
+     }
+    
+     .grid-logo{
+         
+         grid-template-columns: repeat(4,1fr);
+         grid-gap: 3%;
+         padding: 5% 5%;
+     }
+
+     .grid-card{
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+
+    .section-four{
+        flex-direction: column;
+    }
+    .photo-property-s4 {
+        display: flex;
+        justify-content: center;
+    }
+    .section-title-details-s4{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .for-flex{
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+
+    .nav-none{
+         display: none;
+     }
+
+
+    .nav-none{
+         display: none;
+     }
+  }
  
