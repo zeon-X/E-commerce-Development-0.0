@@ -309,11 +309,17 @@ article h6{
 
 
   @media only screen and (max-width :688px) {
-    
+    body{
+        width: 100%;
+        margin: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     header,main{
         width: 96%;
-        margin-left :2%;
-        margin-right: 2%;
+        /* margin-left :2%;
+        margin-right: 2%; */
      }
 
     footer{
@@ -346,7 +352,7 @@ article h6{
     
      .grid-logo{
          border: none;
-         grid-template-columns: repeat(4,1fr);
+         grid-template-columns: repeat(3,1fr);
          grid-gap: 3%;
          padding: 0% 5%;
      }
